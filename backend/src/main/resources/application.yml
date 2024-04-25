@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mabase
+    username: root
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: MYSQL  # Use "MYSQL" instead of "mysql"
+    database-platform: org.hibernate.dialect.MySQLDialect  # Correct the dialect class name
